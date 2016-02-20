@@ -44,6 +44,7 @@ def fetchParagraphs(paragraphpath):
 
 
 def genOutput(sentences, verbs, nouns, pnouns, adjs):
+	siteName = ''
 	#For each sentence
 	for i in sentences:
 
@@ -56,6 +57,7 @@ def genOutput(sentences, verbs, nouns, pnouns, adjs):
 				while(len(x) < 1):
 					x = random.choice(pnouns)	
 				i[j] = x
+				siteName = x
 	
 			elif i[j] == 'N':
 				x = random.choice(nouns)
@@ -96,7 +98,7 @@ def genOutput(sentences, verbs, nouns, pnouns, adjs):
 					output += ' ' + j
 			output += '. '
 	#hackity hack too tired to find this bug
-	return output[:len(output)-2]
+	return output[:len(output)-2], siteName
 
 #Generates a number of populated copy patterns
 def genCopy(path, paragraphpath, repeats=1):
@@ -108,7 +110,9 @@ def genCopy(path, paragraphpath, repeats=1):
 		result = []
 
 		for i in range(repeats):
-			result.append(genOutput(sentences, verbs, nouns, pnouns, adjs))
+			x, y = genOutput(sentences, verbs, nouns, pnouns, adjs)
+			result.append(x)
+			result.append(y)
 			sentences = fetchParagraphs(paragraphpath)
 
 		return result

@@ -49,6 +49,7 @@ def genOutput(sentences, verbs, nouns, pnouns, adjs):
 
 		#if we match a meta pattern, fetch a random 
 		for j in range (len(i)):
+
 			if i[j] == "PN":
 				#make sure we don't get the EOF line
 				x = random.choice(pnouns)
@@ -78,7 +79,7 @@ def genOutput(sentences, verbs, nouns, pnouns, adjs):
 		i[0] = capitalize(i[0])
 
 	#Get rid of EOF line (not portable)
-	sentences.pop(-1)
+	#sentences.pop(-1)
 
 
 	#build output strings
@@ -94,9 +95,10 @@ def genOutput(sentences, verbs, nouns, pnouns, adjs):
 				else:
 					output += ' ' + j
 			output += '. '
-	return output
+	#hackity hack too tired to find this bug
+	return output[:len(output)-2]
 
-#Generates a copy pattern
+#Generates a number of populated copy patterns
 def genCopy(path, paragraphpath, repeats=1):
 	verbs, nouns, pnouns, adjs = fetchLists(path)
 	sentences = fetchParagraphs(paragraphpath)
@@ -104,6 +106,7 @@ def genCopy(path, paragraphpath, repeats=1):
 		print "Error - repeats must be greater than or equal to one\n\n"
 	elif(repeats > 1):
 		result = []
+
 		for i in range(repeats):
 			result.append(genOutput(sentences, verbs, nouns, pnouns, adjs))
 		return result

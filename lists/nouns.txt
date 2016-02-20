@@ -29,7 +29,7 @@ brand
 brand identity
 building capabilities
 burn downs
-burn rate
+burn rates
 business process outsourcing
 buzz
 capacity building
@@ -213,7 +213,7 @@ visual identity
 visual storytelling
 vlogging
 vortals
-wantrapreneur
+wantrapreneurs
 wearable tech
 web 2.0
 web personalization

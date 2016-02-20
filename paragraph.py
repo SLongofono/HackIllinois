@@ -109,6 +109,8 @@ def genCopy(path, paragraphpath, repeats=1):
 
 		for i in range(repeats):
 			result.append(genOutput(sentences, verbs, nouns, pnouns, adjs))
+			sentences = fetchParagraphs(paragraphpath)
+
 		return result
 	else:
 		return genOutput(sentences, verbs, nouns, pnouns, adjs)

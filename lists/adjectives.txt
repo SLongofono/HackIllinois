@@ -31,7 +31,6 @@ in the black
 incremental
 interoperable
 intuitive
-Kafkaesque
 market-leading
 meta
 mission critical

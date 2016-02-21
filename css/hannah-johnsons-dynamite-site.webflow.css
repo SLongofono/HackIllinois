@@ -80,6 +80,7 @@ p {
   transition: background-color 300ms ease, color 300ms ease;
   color: #fff;
   font-size: 18px;
+  websiteTemplates
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -203,7 +204,8 @@ p {
 
 .copyright {
   color: hsla(0, 0%, 100%, .52);
-  text-align: center;
+  /* text-align: left;*/
+  websiteTemplates
 }
 
 .bars-wrapper {

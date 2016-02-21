@@ -44,12 +44,12 @@ body.nonadmin-home {
 }
 
 h1 {
-  color: black;
+  color: white;
   font-size: 60px;
   /*font-weight: bold;*/
 
-  /*text-shadow:
-   2px 2px 7px #000;*/
+  text-shadow:
+   2px 2px 7px #000;
 
   rbga(0, 0, 0, .5);
 
@@ -57,12 +57,12 @@ h1 {
 
 h2 {
   text-align: center;
-  /*color: white;*/
+  color: white;
   font-size: 16px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 35px;
 
 }
 
@@ -92,7 +92,6 @@ a:visited {
 .container {
   padding: 4px 2px 4px 4px;
   style=width: 100%;
-  /*background-color: #b0e0e6;*/
 }
 
 #content-centered {
@@ -131,12 +130,10 @@ div.transbox {
 }
 
 .button a {
-  margin-top: 35px;
-  margin-right: 40px;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 20px;
   font-size: 20px;
   /*color: white;*/
-	
 }
 
 li.button {
@@ -205,7 +202,7 @@ li.button {
 
 /* 4* Song Table -----------------------------------------------------------*/
 
-.body {
+.song-table {
   padding: 15px 10px 10px 30px;
   background-color: white;
   font-size: 22px;

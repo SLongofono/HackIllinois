@@ -12,6 +12,7 @@ def hello():
 	x = open("target1.html", "r")
 	page = x.read()
 	x.close()
+	print page
 	return page
 
 @app.route("/target2.html")
@@ -22,6 +23,7 @@ def hello2():
 	x = open("target2.html", "r")
 	page = x.read()
 	x.close()
+	print page
 	return page
 
 

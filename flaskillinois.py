@@ -12,7 +12,10 @@ def hello():
 	x = open("target1.html", "r")
 	page = x.read()
 	x.close()
-	print page
+	y = open('log.txt', 'a')
+	y.write(page)
+	y.write('\n')
+	y.close()
 	return page
 
 @app.route("/target2.html")
@@ -23,7 +26,10 @@ def hello2():
 	x = open("target2.html", "r")
 	page = x.read()
 	x.close()
-	print page
+	y = open('log.txt', 'a')
+	y.write(page)
+	y.write('\n')
+	y.close()
 	return page
 
 

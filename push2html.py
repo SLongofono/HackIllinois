@@ -4,7 +4,7 @@ import paragraph as para
 import sys
 
 target = ''
-if sys.argv[1] == 1:
+if sys.argv[1] == '111':
 	print "FOUND A ONE"
 	target = 'target1.html'
 else:

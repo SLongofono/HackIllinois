@@ -13,9 +13,9 @@ else:
 
 #command = "python paragraph.py . ./p1.txt 4"
 #output = subprocess.Popen(command, close_fds=True, shell=True, stdout=subprocess.PIPE).communicate()[0]
-quote1, nil = para.genCopy(os.getcwd(), os.getcwd() + "quote1.txt")
-quote2, nil = para.genCopy(os.getcwd(), os.getcwd()+"quote2.txt")
-quote3, nil = para.genCopy(os.getcwd(), os.getcwd() +"../quote1.txt")
+quote1, nil = para.genCopy(os.getcwd(), os.getcwd() + "/quote1.txt")
+quote2, nil = para.genCopy(os.getcwd(), os.getcwd()+"/quote2.txt")
+quote3, nil = para.genCopy(os.getcwd(), os.getcwd() +"/quote1.txt")
 body, nil = para.genCopy(os.getcwd(), os.getcwd() + "/b1.txt")
 copy, name = para.genCopy(os.getcwd(), os.getcwd() + "/p1.txt")
 
@@ -38,7 +38,7 @@ command4 = 'sed -i s/rrrrr/' + '\"' + quote1 + '\"' + '/g ' + target
 command5 = 'sed -i s/sssss/' + '\"' + quote2 + '\"' + '/g ' + target
 
 #uuuuu for quote3
-command4 = 'sed -i s/uuuuu/' + '\"' + qoute3 + '\"' + '/g ' + target
+command4 = 'sed -i s/uuuuu/' + '\"' + quote3 + '\"' + '/g ' + target
 
 
 os.system(command1)

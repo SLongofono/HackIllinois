@@ -16,26 +16,33 @@ else:
 quote1, nil = para.genCopy(os.getcwd(), os.getcwd() + "quote1.txt")
 quote2, nil = para.genCopy(os.getcwd(), os.getcwd()+"quote2.txt")
 quote3, nil = para.genCopy(os.getcwd(), os.getcwd() +"../quote1.txt")
-#copy, name = para.genCopy(os.getcwd(), os.getcwd() + "/p1.txt")
-
+body, nil = para.genCopy(os.getcwd(), os.getcwd() + "/b1.txt")
+copy, name = para.genCopy(os.getcwd(), os.getcwd() + "/p1.txt")
 
 os.system('cp template1.html target1.html')
 os.system('cp template2.html target2.html')
 
-#qqqqq for copy
-command1 = 'sed -i s/qqqqq/' + '\"' + quote1 + '\"' + '/g ' + target
+#aaaaa for about
+command1 = 'sed -i s/aaaaa/' + '\"' + copy + '\"' + '/g ' + target
 
-#rrrrr for name
-command2 = 'sed -i s/rrrrr/' + '\"' + quote2 + '\"' + '/g ' + target
+#bbbbb for body
+command2 = 'sed -i s/bbbbb/' + '\"' + body + '\"' + '/g ' + target
 
-#sssss for something
-command3 = 'sed -i s/sssss/' + '\"' + quote3 + '\"' + '/g ' + target
+#ttttt for name
+command3 = 'sed -i s/ttttt/' + '\"' + name + '\"' + '/g ' + target
 
-#ccccc for something else
-#command = 'sed -i s/nnnnn/' + '\"' + output[0] + '\"' + '/g ' + target
+#rrrrr for quote1
+command4 = 'sed -i s/rrrrr/' + '\"' + quote1 + '\"' + '/g ' + target
+
+#sssss for quote2
+command5 = 'sed -i s/sssss/' + '\"' + quote2 + '\"' + '/g ' + target
+
+#uuuuu for quote3
+command4 = 'sed -i s/uuuuu/' + '\"' + qoute3 + '\"' + '/g ' + target
+
 
 os.system(command1)
 os.system(command2)
 os.system(command3)
-#print output[0]
-#print output[1]
+os.system(command4)
+os.system(command5)

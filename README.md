@@ -36,7 +36,7 @@ Place a copy of the raw html in the working directory and name it 'template.html
 
 *paragraph.py* - This script generates a populated paragraph template, using a template argument and lists of filler words.  It may be used as is (see instructions), or called as a part of the flask app
 
-*push2html.py* - This automates the content generation by calling the paragraph.py script with appropriate templates, catching the returned strings, and injecting them into the target.html code.  Note that the use of a unique string is used to make sure sed behaves well - do not use it without first adding such a string to the template1.html or template2.html files.
+*push2html.py* - This automates the content generation by calling the paragraph.py script with appropriate templates, catching the returned strings, and injecting them into the target.html code.  Note that the use of a unique terget string is used to make sure sed behaves well - do not use it without first adding such a string to the template1.html or template2.html files.
 
 *quote1.txt* - This is a quote paragraph template for use with the paragraph.py script
 
@@ -50,6 +50,6 @@ Place a copy of the raw html in the working directory and name it 'template.html
 
 *template.html* - Artifact of previous testing
 
-*template1.html* - This is one of two website designs used to generate target.html.  Every time push2html.py is called, one of these templates will be copied over to target.html.  The scripts will then replace to target string with the generated paragraphs.
+*template1.html* - This is one of two website designs used to generate target.html.  Every time push2html.py is called, one of these templates will be copied over to target.html.  The scripts will then replace the target strings with the generated paragraphs.
 
-*template2.html* - This is one of two website designs used to generate target.html.  Every time push2html.py is called, one of these templates will be copied over to target.html.  The scripts will then replace to target string with the generated paragraphs.
+*template2.html* - This is one of two website designs used to generate target.html.  Every time push2html.py is called, one of these templates will be copied over to target.html.  The scripts will then replace the target strings with the generated paragraphs.

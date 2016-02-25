@@ -1,8 +1,8 @@
 #HackIllinois#
 ##Our KU team for HackIllinois : 
-*Ashley Hutton
-Hannah Johnson
-Stephen Longofono
+*Ashley Hutton | 
+Hannah Johnson | 
+Stephen Longofono | 
 Rabel Marte*
 #####Usage: To generate a randomly populated paragraph, use the paragraph.py script directly:
 
